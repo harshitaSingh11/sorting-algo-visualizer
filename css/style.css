@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  column-gap: 10%;
+  padding: 0% 5%;
+}
+
+nav .array-inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_size {
+  padding: 5% 0%;
+}
+
+nav .array-inputs #a_speed {
+  padding: 5% 0%;
+}
+
+#a_generate {
+  background-color: teal;
+  position: relative;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  padding: 5px 2px;
+  margin: -20% 45%;
+  margin-bottom: 10px;
+}
+
+#a_generate:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+nav .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+nav .header_right .nav-heading {
+  display: inline-block;
+  position: relative;
+  font-size: x-large;
+  padding: 8% 10%;
+}
+
+.algos {
+  text-align: center;
+}
+
+.algos button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+}
+
+.algos button:hover {
+  background-color: teal;
+  cursor: pointer;
+}
+
+.algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.algos .butt_selected {
+  background-color: white;
+  color: green;
+}
+
+.algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.algos .butt_unselected:hover {
+  background-color: teal;
+  cursor: pointer;
+}
+
+section #array_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 20px;
+    padding: 4px;
+  }
+  nav {
+    font-size: 12px;
+  }
+  nav .header_right .nav-heading {
+    font-size: 14px;
+  }
+  #a_generate {
+    width: 120px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+  section #array_container {
+    width: 80%;
+    height: 50vh;
+    margin-top: 30px;
+  }
+}
